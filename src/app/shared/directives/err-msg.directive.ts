@@ -19,11 +19,11 @@ export class ErrMsgDirective implements OnInit{
   ngOnInit(): void {
     this.setColor()
     this.setMsg()
-    this.addClass()
   }
-
+  
   setColor(){
     this.htmlElement.nativeElement.style.color = this.color
+    this.addClass()
   }
   setMsg():void{
         

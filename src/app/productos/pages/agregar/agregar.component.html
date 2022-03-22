@@ -11,17 +11,14 @@
             <input class="form-control" formControlName="nombre">
         </div>
         <div class="col-auto">
-            <span class="form-text"
-                errorMsj
-                color="green"
+            <span errorMsj
                 *ngIf="msjError('nombre')">
-                Este campo es requerido
             </span>
         </div>
     </div>
     <div class="row mt-4">
         <div class="col">
-            <button class="btn btn-primary" errorMsj color="red">Guardar</button>
+            <button class="btn btn-primary">Guardar</button>
         </div>
     </div>
 </form>

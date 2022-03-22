@@ -1,11 +1,14 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule               } from '@angular/core';
+import { CommonModule           } from '@angular/common';
 
 import { ProductosRoutingModule } from './productos-routing.module';
+import { AgregarComponent       } from './pages/agregar/agregar.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    AgregarComponent
+  ],
   imports: [
     CommonModule,
     ProductosRoutingModule

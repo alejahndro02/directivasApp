@@ -11,7 +11,9 @@ import { FormBuilder,
   ]
 })
 export class AgregarComponent implements OnInit {
+  // Valores por defecto
   texto1:string="Quetzalli"
+  color:string='green'
   // Se configuran las propiedades del formulario 
   miFormulario: FormGroup = this.fb.group({
     nombre:['',Validators.required]
@@ -26,8 +28,12 @@ export class AgregarComponent implements OnInit {
     return this.miFormulario.get(campo)?.invalid || false
   }
   cambiarNombre(){
-    this.texto1="Quetza"
-    console.log(this.texto1);
+    this.texto1=Math.random().toString()
     
+  }
+  cambiarColor(){
+    // Selecciona un color Random 
+    const color = "#xxxxxx".replace(/x/g, y=>(Math.random()*16|0).toString(16));
+    this.color= color
   }
 }

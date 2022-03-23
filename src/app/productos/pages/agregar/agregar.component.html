@@ -14,7 +14,7 @@
             <span errorMsj
                 [mensaje]="texto1"
                 [color]="color"
-                *ngIf="msjError('nombre')">
+                [valido]="!msjError('nombre')">
             </span>
         </div>
     </div>

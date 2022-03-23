@@ -9,7 +9,6 @@ import { Directive,
 export class ErrMsgDirective implements OnInit{
   
   htmlElement :ElementRef<HTMLElement>
-  
   private _color:string='red'
   private _mensaje:string='Este campo es Requerido'
   private _valido:boolean=true
